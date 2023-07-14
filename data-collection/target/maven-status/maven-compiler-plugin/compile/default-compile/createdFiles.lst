@@ -1,0 +1,5 @@
+com/example/stockprediction/StockDataCollector.class
+com/example/stockprediction/StockPrice.class
+com/example/stockprediction/AlphaVantageResponse.class
+com/example/stockprediction/AlphaVantageData.class
+com/example/stockprediction/App.class

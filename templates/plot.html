@@ -1,10 +1,39 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Stock Price Prediction Plot</title>
+    <title>Stock Prices Forecast</title>
 </head>
 <body>
-    <h1>Stock Price Prediction Plot</h1>
-    <img src="{{ plot_path }}" alt="Stock Price Plot">
+    <h1>Stock Prices Forecasting</h1>
+    
+    <!-- Dropdown menu for selecting the company -->
+    <form action="/" method="post">
+        <label for="company">Select Company:</label>
+        <select name="company" id="company">
+            <option value="AAPL">AAPL</option>
+            <option value="IBM">IBM</option>
+            <option value="RELIANCE.BSE">RELIANCE.BSE</option>
+            <!-- Add more company options as needed -->
+        </select>
+
+        <!-- Dropdown menu for selecting the number of days -->
+        <label for="days">Select Number of Days for Prediction:</label>
+        <select name="days" id="days">
+            <option value="30">30 days</option>
+            <option value="60">60 days</option>
+            <option value="90">90 days</option>
+            <option value="180">180 days</option>
+            <option value="365">365 days</option>
+            <!-- Add more options as needed -->
+        </select>
+
+        <button type="submit">Submit</button>
+    </form>
+    
+    <h2>Forecast Plot</h2>
+    <img src="{{ url_for('static', filename=plot_path1) }}" alt="Forecast Plot">
+
+    <h2>Forecast Components Plot</h2>
+    <img src="{{ url_for('static', filename=plot_path2) }}" alt="Forecast Components Plot">
 </body>
 </html>

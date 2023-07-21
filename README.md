@@ -1,5 +1,11 @@
-# StockPrice
+# Realtime StockPrice Forecasting
 ![2023-07-21-200511_1920x1080_scrot](https://github.com/shivesh-ranjan/StockPrice/assets/86239697/f80e477c-f204-493b-980d-2f2f9a0d1a3b)
+
+### Tools and Technologies Used:
+- Prophet
+- Alpha Vantage API
+- Flask
+- Docker
 
 #### Accuracy Metric for the trained Models:
 - R-squared for AAPL: 0.8890

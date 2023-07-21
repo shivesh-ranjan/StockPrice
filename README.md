@@ -10,4 +10,5 @@
 1. git clone
 2. cd StockPrice
 3. docker compose up
+##
 ![image](https://github.com/shivesh-ranjan/StockPrice/assets/86239697/0332979f-1a00-401e-8ee9-d971e5077c88)
